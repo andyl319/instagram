@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  position: relative;
+  min-height: 70px;
+  max-height: 70px;
+  box-shadow: 0px 1px 13px #000000;
+}
+
+.logo {
+  display: flex;
+  float: left;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: 36px;
+  text-decoration: none;
+  color: black;
+  right: calc(-25% + 109px);
+  text-align: left;
+  transition: color 0.6s;
+}
+.logo:hover{
+  color: #125688;
+  cursor: pointer;
+}
+
+.user-greeting > a{
+  color: black;
+  display: flex;
+  padding: 20px;
+  float: left;
+  font-weight: bold;
+  box-sizing: border-box;
+  transition: background-color 0.6s;
+  min-height: 70px;
+  max-height: 70px;
+  line-height: 35px;
+}
+
+.user-greeting > a:last-child:hover{
+  background-color: #125688;
+  color: white;
+
+  cursor: pointer;
+}
+
+.login-signup > a{
+  display: flex;
+  color: black;
+  padding: 20px;
+  float: right;
+  box-sizing: border-box;
+  transition: background-color 0.6s;
+  text-decoration: none;
+  font-weight: bold;
+  min-height: 70px;
+  max-height: 70px;
+  line-height: 35px;
+}
+
+.login-signup > a:hover {
+  background-color: #2C4970;
+  cursor: pointer;
+}

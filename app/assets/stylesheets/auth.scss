@@ -1,0 +1,145 @@
+.login-form-container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  background-image: url("https://static.pexels.com/photos/6603/landmark-bridge-cliff-california.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.auth-header{
+  display: flex;
+  color: white;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: 56px;
+  left: 15px;
+  text-shadow:
+        /* first layer at 1px */
+        -1px -1px 0px #125688,
+         0px -1px 0px #125688,
+         1px -1px 0px #125688,
+        -1px  0px 0px #125688,
+         1px  0px 0px #125688,
+        -1px  1px 0px #125688,
+         0px  1px 0px #125688,
+         1px  1px 0px #125688,
+        /* second layer at 2px */
+        -2px -2px 0px #125688,
+        -1px -2px 0px #125688,
+         0px -2px 0px #125688,
+         1px -2px 0px #125688,
+         2px -2px 0px #125688,
+         2px -1px 0px #125688,
+         2px  0px 0px #125688,
+         2px  1px 0px #125688,
+         2px  2px 0px #125688,
+         1px  2px 0px #125688,
+         0px  2px 0px #125688,
+        -1px  2px 0px #125688,
+        -2px  2px 0px #125688,
+        -2px  1px 0px #125688,
+        -2px  0px 0px #125688,
+        -2px -1px 0px #125688;
+}
+
+.auth-err-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.auth-errors{
+  display: flex;
+  color: red;
+}
+
+.login-form-box{
+  display: flex;
+  position: relative;
+  left: 55%;
+  background-color: black;
+  opacity: .75;
+  border-radius: 20px;
+  flex-direction: column;
+  width: 32%;
+  height: 400px;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.login-title{
+  display: flex;
+  font-size: 26px;
+}
+
+.login-home{
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
+.login-form{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-input{
+  display: flex;
+  width: 55%;
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  border-bottom: solid white;
+  border-width: thin;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.login-submit{
+  display: flex;
+  width: 33%;
+  background-color: transparent;
+  border: solid white;
+  border-width: thin;
+  border-radius: 7px;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  height: 30px;
+  justify-content: center;
+  outline: none;
+}
+
+.auth-form-toggle{
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
+.auth-question-toggle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+}
+
+.login-submit:hover, .login-home:hover,
+.auth-form-toggle:hover{
+  cursor: pointer;
+  border-color: #125688;
+  color: #125688;
+}
