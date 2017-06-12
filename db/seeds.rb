@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 guest = User.create(username: 'guest', password: 'abc123')
+lh = User.create(username: 'LewisHamilton', password: 'password')
+pw = User.create(username: 'PabloWalker', password: 'password')
