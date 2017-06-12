@@ -38,6 +38,7 @@ class Header extends React.Component {
   	let greeting = (
       <nav className="user-greeting">
         <a className="welcome">{day}, {this.props.currentUser.username}!</a>
+        <Link to="/create" className="fa fa-upload fa-2x" id="upload" aria-hidden="true"></Link>
         <a className="logout" onClick={ this.handleLogOut }>LOGOUT</a>
       </nav>
       );
@@ -55,4 +56,4 @@ class Header extends React.Component {
 }
 
 
-export default Header;
+export default withRouter(Header);

@@ -1,0 +1,78 @@
+.form-container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 450px;
+  min-height: 350px;
+  left: calc(50% - 225px);
+  top: 50px;
+  justify-content: space-between;
+}
+
+.drop-zone-container{
+  display: flex;
+  background-color: #a9a9a9;
+  font-size: 16px;
+  max-width: 100%;
+  min-height: 100px;
+  justify-content: center;
+  line-height: 100px;
+}
+
+.dropzone-instruction:hover{
+  cursor: pointer;
+}
+
+.dropzone-picture{
+  display: flex;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.form-input{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+}
+
+.caption-input{
+  display: flex;
+  outline-color: #125688;
+  border-color: #a9a9a9;
+  height: 50px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 7px;
+}
+
+.location-input{
+  display: flex;
+  outline-color: #125688;
+  border-color: #a9a9a9;
+  height: 30px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 7px;
+}
+
+.submit-button{
+  display: flex;
+  position: relative;
+  width: 100px;
+  transition: background-color 0.6s;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 7px;
+  justify-content: center;
+  left: calc(50% - 50px);
+  background-color: white;
+  height: 30px;
+  font-weight: bold;
+}
+
+.submit-button:hover{
+  background-color: #125688;
+  color: white;
+  cursor: pointer;
+}

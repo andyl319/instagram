@@ -7,6 +7,7 @@
   min-height: 70px;
   max-height: 70px;
   box-shadow: 0px 1px 13px #000000;
+
 }
 
 .logo {
@@ -26,7 +27,7 @@
   cursor: pointer;
 }
 
-.user-greeting > a{
+.user-greeting > a, Link{
   color: black;
   display: flex;
   padding: 20px;
@@ -39,28 +40,9 @@
   line-height: 35px;
 }
 
-.user-greeting > a:last-child:hover{
+.user-greeting > a:last-child:hover, #upload:hover{
   background-color: #125688;
   color: white;
 
-  cursor: pointer;
-}
-
-.login-signup > a{
-  display: flex;
-  color: black;
-  padding: 20px;
-  float: right;
-  box-sizing: border-box;
-  transition: background-color 0.6s;
-  text-decoration: none;
-  font-weight: bold;
-  min-height: 70px;
-  max-height: 70px;
-  line-height: 35px;
-}
-
-.login-signup > a:hover {
-  background-color: #2C4970;
   cursor: pointer;
 }

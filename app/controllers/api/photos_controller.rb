@@ -9,7 +9,7 @@ class Api::PhotosController < ApplicationController
   end
 
   def create
-    @photo = Photo.new (photo_params)
+    @photo = Photo.new(photo_params)
     @photo.user_id = current_user.id
 
     if @photo.save
@@ -28,7 +28,7 @@ class Api::PhotosController < ApplicationController
       render json: @photo.errors.full_messages, status: 422
     end
   end
-  
+
   private
 
   def photo_params
