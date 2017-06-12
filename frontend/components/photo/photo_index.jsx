@@ -12,9 +12,9 @@ class PhotoIndex extends React.Component {
     const {photos, children} = this.props;
     return (
       <div className="photo-index">
-        <ul>
+        <a>
           {photos.map(photo => <PhotoIndexItem key={`photo-index${photo.id}`} photo={photo} />)}
-        </ul>
+        </a>
         {children}
       </div>
     );

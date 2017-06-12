@@ -30,7 +30,11 @@ export const requestPhoto = (id) => dispatch => {
 export const createPhoto = (photo) => dispatch => (
   APIUtil.createPhoto(photo)
     .then(photo => dispatch(receivePhoto(photo)))
+);
 
+export const updatePhoto = (photo, id) => dispatch => (
+  APIUtil.updatePhoto(photo, id)
+             .then((user) => dispatch(receivePhoto(photo)))
 );
 
 export const removePhoto = id => dispatch => (

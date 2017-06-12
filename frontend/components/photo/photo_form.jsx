@@ -64,9 +64,8 @@ class PhotoForm extends React.Component {
             onDrop={this.handlePhotoDrop}>
             <div className="dropzone-instruction">
               {this.state.url === '' ? 'Drag-and-drop here or click select an image' :
-              <div>
                 <img className="dropzone-picture" src={this.state.url} />
-              </div>}
+							}
             </div>
           </Dropzone>
         </div>
@@ -82,7 +81,7 @@ class PhotoForm extends React.Component {
                 type="text"
                 className="location-input"
                 value={this.state.location}
-                placeholder="San Francisco, Houston, etc..."
+                placeholder="Location"
                 onChange={this.update('location')}/>
               <input
                 type="hidden"

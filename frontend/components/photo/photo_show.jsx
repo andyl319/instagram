@@ -1,6 +1,6 @@
 import React from 'react';
 import PhotoIndexItem from './photo_index_item';
-
+import { Link, withRouter } from 'react-router';
 
 class PhotoShow extends React.Component {
   constructor(props){
@@ -28,7 +28,7 @@ class PhotoShow extends React.Component {
       if(photo.user_id === this.props.currentUser.id){
         edit =
         <div className="edit-buttons">
-          <div className="edit-button"><span className="fa fa-pencil-square-o" aria-hidden="true"></span>&nbsp;&nbsp;EDIT</div>
+          <Link to={`photos/${photo.id}/edit`} className="edit-button"><span className="fa fa-pencil-square-o" aria-hidden="true"></span>&nbsp;&nbsp;EDIT</Link>
           <div className="delete-button" onClick={this.handleDelete}><span className="fa fa-trash" aria-hidden="true"></span>&nbsp;&nbsp;DELETE</div>
         </div>;
       }
@@ -47,4 +47,4 @@ class PhotoShow extends React.Component {
   }
 }
 
-export default PhotoShow;
+export default withRouter(PhotoShow);
