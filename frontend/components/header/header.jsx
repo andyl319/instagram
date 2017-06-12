@@ -46,7 +46,7 @@ class Header extends React.Component {
     return (
       <div>
         <div className="header">
-          <Link to="/" className="logo">INSTAGRAM</Link>
+          <Link to="/home" className="logo">INSTAGRAM</Link>
           {greeting}
         </div>
     </div>

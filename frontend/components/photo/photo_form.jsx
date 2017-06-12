@@ -44,7 +44,7 @@ class PhotoForm extends React.Component {
     const photo = this.state;
     delete photo["uploadedPhoto"];
 
-    this.props.createPhoto(photo).then(this.props.router.push(`/`));
+    this.props.createPhoto(photo).then(this.props.router.push(`/home`));
   }
 
   update (field) {

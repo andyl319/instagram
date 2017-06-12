@@ -1,0 +1,24 @@
+.edit-buttons{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.edit-button, .delete-button{
+  padding-bottom: 5px;
+  padding-right: 5px;
+  color: #125688;
+}
+
+.edit-button:hover, .delete-button:hover{
+  color: black;
+  cursor: pointer;
+  border-bottom: solid black;
+  border-right: solid black;
+  border-width: 3px;
+  padding-bottom: 0;
+  padding-right: 2px;
+
+}
