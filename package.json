@@ -31,5 +31,12 @@
     "redux-thunk": "^2.1.0",
     "superagent": "^3.5.0",
     "webpack": "^1.14.0"
+  },
+  "engines": {
+    "node": "6.2.1",
+    "npm": "3.9.3"
+  },
+  "scripts": {
+    "postinstall": "webpack"
   }
 }
