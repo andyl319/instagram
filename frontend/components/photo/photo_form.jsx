@@ -75,13 +75,13 @@ class PhotoForm extends React.Component {
               <textarea
                 className="caption-input"
                 value={this.state.caption}
-                placeholder="Write a caption..."
+                placeholder=" Write a caption..."
                 onChange={this.update('caption')} />
               <input
                 type="text"
                 className="location-input"
                 value={this.state.location}
-                placeholder="Location"
+                placeholder=" Location"
                 onChange={this.update('location')}/>
               <input
                 type="hidden"
