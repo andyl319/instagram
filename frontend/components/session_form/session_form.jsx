@@ -80,7 +80,7 @@ class SessionForm extends React.Component {
 	render() {
 		return (
 			<div className="login-form-container">
-				<h1 className="auth-header">Instagram</h1>
+				<h1 className="auth-header">For the Gram</h1>
 				<form onSubmit={this.handleSubmit} className="login-form-box">
 					{this.title()}
 					{this.renderErrors()}
